@@ -1,0 +1,92 @@
+body {
+    font-size: 26px;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: dashed;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(255, 115, 50);
+    font-family: 'Dosis', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nombre-pagina{
+    margin-left: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white
+}
+
+li::after{
+    content: "✔";
+}
+
+@media (min-width: 480px)
+{   
+    header
+    {
+        background-color: rgb(241, 56, 232);
+    }
+
+
+    body
+    {
+        background-color: rgb(202, 79, 151); 
+        text-align: center;
+    }
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        background-color: rgb(134, 204, 42);
+    }
+    nav{
+        padding: 10px 0px;
+    }
+
+    body{
+        background-color: rgb(226, 236, 82);
+    }
+}
+
+@media (min-width: 1024px)
+{   
+    header
+    {
+        background-color:rgb(255, 115, 50);
+    }
+    
+
+    body
+    {
+        background-color: rgb(204, 67, 67); 
+    }
+}

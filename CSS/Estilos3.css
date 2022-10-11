@@ -1,0 +1,84 @@
+body {
+    background: rgb(197, 190, 84);
+    font-size: 26px;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(240, 255, 25);
+    font-family: 'Dosis', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nombre-pagina{
+    margin-left: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: dashed;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border-width: 5px;
+    border-style:outset;
+    border-color:darkcyan;
+    padding: 10px 5px 15px 20px ;
+    margin: 5px 15px 25px 30px;
+    text-align: center;
+    box-sizing: content-box;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border-width: 5px;
+    border-style:outset;
+    border-color:darkcyan;
+    padding: 10px 5px 15px 20px ;
+    margin: 5px 15px 25px 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* El box se hace un poco mas pequeño y se ajusta mejor al contenido
+del box, calcula el tamaño del elemento incluyendo el padding y el border.*/
